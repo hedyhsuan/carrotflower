@@ -1,0 +1,713 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="bs441/css/bootstrap.css">
+    <link rel="stylesheet" href="css/bk0810.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:700&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="image/icon.png" type="image/x-icon" />
+    <title>Carrot Flower</title>
+    <meta name="author" content="Carrot Flower">
+<meta name="copyright" content="Carrot Flower">
+
+<link rel="author" href="">
+<link rel="publisher" href="">
+<meta name="description" content="plastic free shop">
+
+<meta itemprop="name" content="Carrot Flower">
+<meta itemprop="image" content="https://carrotflower.000webhostapp.com/image/unboxed-canterbury.jpg">
+<meta itemprop="description" content="plastic free shop">
+
+<meta property="og:title" content="Carrot Flower" >
+<meta property="og:url" content="https://carrotflower.000webhostapp.com/">
+<meta property="og:image" content="https://carrotflower.000webhostapp.com/image/unboxed-canterbury.jpg">
+<meta property="og:description" content="Plastic Free shop" >
+  </head>
+  
+
+<div class="container-fluied overflow-hidden">
+  <header class="wrapper">
+
+
+    <nav id="nav" class="client-navbar client-navbar-fixed-top">
+      <!-- nav上層區 -->
+       <div class="navbar-header mb-3 mt-3">
+           <!-- 漢堡按鈕 -->
+           <a href="#" id="btn"  class="navbar-mobile-btn"> 
+              <span></span>
+              <span></span>
+              <span></span>
+           </a>
+           
+           <div class="media " >
+              <span></span>
+           </div> 
+           <!-- LOGO -->
+           <a class="navbar-logo " href="index.html">
+              <!-- LOGO在不同裝置切換下面兩張圖片 -->
+              <img src="ICONS/LOGO-2.png" alt="logo">
+              <img src="ICONS/LOGO-3.png" alt="logo">
+           </a>
+           
+  
+           <div class="shop-car">
+              <button class="btn" data-toggle="" data-target="">
+                   <img src="image/supermarket.svg" alt="" width="26">
+              </button>
+           </div>
+ 
+       </div>
+ 
+       <!-- nav下層區 -->
+       <div class="navbar-footer">
+           <!-- 搜尋列 -->
+           <div class="navbar-search">
+              <img src="image/search.svg" alt="" width="15">
+           </div>
+ 
+           <!-- navbar -->
+           <div class="client-navbar-nav" >
+              <a class="navbar-link mx-3 my-1" href="about.html">關於我們   </a>
+              <a class="navbar-link mx-3 my-1" href="calendar.html">最新消息</a>                  
+              <a class="navbar-link mx-3 my-1" href="shop.html">線上購物</a>              
+              <a class="navbar-link mx-3 my-1" href="location.html">門市位置</a>         
+           </div>         
+            
+           <!-- 社群連結 -->
+           <div class="social-links">
+              <a href="#" class="fa fa-instagram"></a>
+              <a href="#" class="fa fa-facebook"></a>
+              <a href="#" class="fa fa-twitter"></a>
+           </div>                
+                         
+       </div>         
+             
+    </nav>          
+ </header>
+                   
+  
+              
+          
+          
+    
+           
+   
+            
+
+<div class="wrapper wrapper-top">
+ <div class="row">
+    <div class="mx-auto news-topimage">
+      <img src="image/222.jpg" class="col-12">
+    </div>
+</div>  
+<div class="blank"></div>
+ 
+  <div class="row calendar mx-auto">
+          <!-- 萬年曆 -->
+         <div class="col-lg-8 position-relative">
+             <div class="">
+                <div class="year-month">
+
+                  <i onclick="preMonth();" class="fa fa-angle-left"></i>
+                <!-- <button onclick="preMonth();">◀ </button> -->
+                    <h3 Id="year" style="display: inline-block"></h3>
+                    <h3 id="month" style="display: inline-block"></h4>
+                      <i onclick="back();" class="back">Back</i>  
+                  <i onclick="nextMonth();" class="fa fa-angle-right"></i>
+                </div>
+                <div class="headlist">
+                <div class="day">日</div>
+                <div class="day">一</div>
+                <div class="day">二</div>
+                <div class="day">三</div>
+                <div class="day">四</div>
+                <div class="day">五</div>
+                <div class="day">六</div>
+                
+                </div>
+                <div class="">
+                  <div id="list" class="list"></div>
+                </div>
+             
+               
+         </div>
+         </div>
+
+         <div class="col-lg-4 text-center">
+           <img src="image/cale.jpg" class="w-100 mb-3">
+        <div>
+          <h5 class="font-weight-bold">近期活動</h5>
+              <i class="fa fa-calendar">
+           </i> 
+           <span>2020/08/02 17:00</span> <br>
+           <a href="#">
+            <span class="fa fa-child"></span>
+            &#9001;CF&#9002;｜時髦生活智慧王｜DIY教室
+           </a>
+           <hr>
+          
+           <i class="fa fa-calendar">
+          </i> 
+          <span>2020/08/13 10:00</span> <br>
+          <a href="#">
+           <span class="fa fa-hand-peace-o"></span> 
+          &#9001;拾&#9002; ｜不是大媽不帶勁兒｜ 七月份二手市集
+        </a>
+        <hr>
+          
+          <i class="fa fa-calendar">
+          </i> 
+          <span>2020/08/17 09:00</span> <br>
+          <a href="#">
+            <span class="fa fa-child"></span>
+            &#9001;CF&#9002;｜翻轉吧!氣候變遷｜ 講座-荒野保護協會 </h6>
+          </a>
+          <hr>
+
+          <i class="fa fa-calendar">
+          </i> 
+          <span>2020/08/23 13:00</span> <br>
+          <a href="#">
+            <span class="fa fa-hand-peace-o"></span> 
+          &#9001;拾&#9002; 香港騷動年代—抗志 影像展-香港邊城青年 Hong Kong Outlanders
+        </a>
+        <hr>
+
+        <i class="fa fa-calendar">
+        </i> 
+        <span>2020/08/24 13:00</span> <br>
+        <a href="#">
+          <span class="fa fa-hand-peace-o"></span> 
+        &#9001;拾&#9002; ｜這裡有黑鵝｜大衛・史瑞格里商品快閃概念店 by the COLLECTORS 
+      </a>
+      <hr>
+
+        </div>
+         </div>
+
+        
+      
+
+         
+  </div>
+
+  <div class="blank"></div>  
+
+  <div class="row ">
+
+    <div class="col-12 col-md-6 col-lg-3 "> 
+      <a href="#">
+         <div class="cd1">
+           <img src="image/news-1.jpg" alt="" class="w-100">
+           <div class="cd1-text">
+              <h2 class="mb-0">店內活動</h2>
+           </div>
+         </div>
+      </a>
+    </div>
+
+    
+    <div class="col-12 col-md-6 col-lg-3 "> 
+      <a href="#">
+         <div class="cd1">
+           <img src="image/news-2.jpg" alt="" class="w-100">
+           <div class="cd1-text">
+              <h2 class="mb-0">專題</h2>
+              <a href=""></a>
+           </div>
+         </div>
+      </a>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-3 "> 
+      <a href="#">
+         <div class="cd1">
+           <img src="image/news-4.jpg" alt="" class="w-100">
+           <div class="cd1-text">
+              <h2 class="mb-0">生態</h2>
+           </div>
+         </div>
+      </a>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-3 "> 
+      <a href="#">
+         <div class="cd1">
+           <img src="image/LVMHs.jpg" alt="" class="w-100">
+           <div class="cd1-text">
+              <h2 class="mb-0">保育</h2>
+           </div>
+         </div>
+      </a>
+    </div>
+
+      <!-- 原本的CARD做法 -->
+      <!-- <div class="col-12 col-md-6 col-lg-3">
+      <div class="card">
+        <img src="image/news-4.jpg" alt="" class="w-100">
+        <div class="card-body">
+          <h2 class="text-center">保育</h2>
+        </div>
+        
+      </div>
+    </div> -->
+    
+    
+    </div>
+    <div class="blank"></div>  
+
+
+
+
+<div class="row">
+
+    <div class="tag col-12 text-center">
+       <img src="image/A-1.jpg" class="w-100 mb-5">
+
+       <div class="text-center mb-3"> 
+          <h3 class="text-center px-2">#為地球發聲</h3>
+          <p class=" ">環保需要更多人的參與,我們需要大家感受這份愛生活愛地球的心.<br></p>
+          <p class="">將你的環保生活分享出去,讓更多人知道環保生活是一件很酷的事!</p>
+       </div>
+
+       <div class="a-links mx-auto text-center mb-5">
+           <a href="#">#一件小事救地球</a>
+            <a href="#">#減塑生活</a>
+            <a href="#">#AllLifesMatter</a>
+            <a href="#">#少用一個塑膠袋</a><br>
+            <a href="#">#自己的地球自己救</a>
+            <a href="#">#自己的杯子自己帶</a>
+            <a href="#">#plasticfreeshopTW</a>
+       </div>
+   
+    <div class="col-12 d-flex instapic mx-auto ">
+        <a href="#"><img src="image/ins-1.png" class="insta-pic"></a>
+        <a href="#"><img src="image/ins-2.png" class="insta-pic"></a>
+        <a href="#"><img src="image/ins-3.png" class="insta-pic"></a>
+    </div>
+    <div class="col-12 d-flex instapic mx-auto ">
+      <a href="#"><img src="image/ins-4.png" class="insta-pic"></a>
+      <a href="#"><img src="image/ins-5.png" class="insta-pic"></a>
+      <a href="#"><img src="image/ins-6.png" class="insta-pic"></a>
+  </div>
+           
+  <div class="blank"></div>
+ 
+     
+
+    
+
+   <!-- <div class="insta ">
+      <div class="">
+          <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CBZ32EDJKdQ/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="12" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> </blockquote> 
+   
+      </div>
+   </div> -->
+       
+  
+      </div>
+</div>
+
+
+   
+</div>
+  
+
+  
+   
+  
+
+
+
+        
+           
+   <div class="row text-center">
+    <div class="col-12 goal py-4 mx-auto d-flex justify-content-between">
+      <div class="goal-block ">
+      
+          <img src="ICONS/shop.png " alt="">
+          <h5 class="mt-3">無塑商店</h5>
+          <p>
+            超過50種的無包裝食材，依使用份量購買，減少環境負擔及食材屯積
+          </p>
+      
+      </div>
+      <div class="goal-block ">
+   
+          <img src="ICONS/product.png " alt="">
+        <h5 class="mt-3">風格商品</h5>
+          <p>
+            提供品質良好的環保及風格商品，商品及包材都符合環保規範，讓環保也能成為品味生活的一部份
+          </p>
+  
+      </div>
+      <div class="goal-block ">
+   
+          <img src="ICONS/news.png" alt="">
+          <h5 class="mt-3">環境保育</h5>
+          <p>
+            提供環境保育新聞及專題，並不定期舉辦相關活動及講座，將環保概念付諸生活
+          </p>
+    </div>
+ 
+
+    </div>
+
+
+
+  </div>
+
+  <div class="bottom-row row" >
+
+    <div class="col-12 bottom mx-auto py-4 d-flex justify-content-between border-top border-bottom">
+
+      <div class="">
+       <ul class="bottom-list">
+        <strong>
+        Carrot Flower
+        </strong>
+     
+       <li><a href="">關於我們</a></li>
+       <li><a href="">媒體報導</a></li>
+       <li><a href="">工作機會</a></li>
+     </ul>
+      </div>
+
+      <div class="">
+        
+     <ul class="bottom-list">
+       <strong>
+         幫助/政策
+        </strong>
+       <li><a href="">問與答</a></li>
+       <li><a href="">推廣合作</a></li>
+       <li><a href="">服務條款</a></li>
+       <li><a href="">退貨政策</a></li>
+     </ul>
+      </div>
+
+      
+      <div class="newsletter d-block">
+    
+        <form class="">
+          <div class="form-group">
+            <label for="exampleInputEmail1">訂閱我們的電子報</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="輸入E-mail">
+            <small id="emailHelp" class="form-text text-muted">環境新聞/優惠訊息/活動</small>
+          </div>
+          </form>
+
+      
+      </div>
+
+     </div>
+  
+
+  </div>
+
+         <div class="footer row mx-auto">
+
+
+        
+        <div class="social-links mx-auto">
+            <h5>追蹤我們</h5>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+           
+          </div>
+
+     
+      <p class="col-12 text-center ">
+        © Copyright 2019 Carrot Flower - All Rights Reserved <br>
+        Icons made by <a href="https://www.flaticon.com/authors/those-icons" title="Those Icons">Those Icons</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+      </p>
+
+    </div>
+
+  
+
+
+
+    
+      
+    
+
+    
+</div>   
+
+
+  <script>
+  //  function tog(){
+  //    let tog=document.getElementById("btn");
+  //    tog.className="navbar-mobile-btn"+" open";
+  //    let nav=document.getElementById("nav");
+  //    nav.className="client-navbar"+" show"
+
+  //  }
+
+
+
+
+
+  let btn=document.getElementById("btn");
+  
+  btn.onclick=function(){
+    // btn.className="navbar-mobile-btn"+" open";
+    let tog=btn.getAttribute("class");
+    if(tog==="navbar-mobile-btn"){
+      btn.setAttribute("class","navbar-mobile-btn open");
+    }else{
+      btn.setAttribute("class","navbar-mobile-btn");
+    }
+    
+    // let nav=document.getElementById("nav");
+    // nav.className="client-navbar"+" show"
+    let nav=document.getElementById("nav");
+    let show=nav.getAttribute("class");
+    if(show==="client-navbar client-navbar-fixed-top"){
+      nav.setAttribute("class","client-navbar client-navbar-fixed-top show");
+    }else{
+      nav.setAttribute("class","client-navbar client-navbar-fixed-top");
+    }
+    
+  }
+  
+
+
+
+    // ----------------------------------------------------------
+    //資料
+    let state=null;
+    let now = null;
+    let nowd = null;
+    let nowm = null;    
+    // 初始化萬年曆--執行的規則
+    function init(){
+    state={
+        current:new Date()
+        //將變數設定為當下的時間
+    };
+    now = state.current.getTime();
+    nowm = state.current.getMonth();
+    nowd = state.current.getDate();
+    // console.log(now);
+    render();
+    }
+
+    function preMonth(){
+    state.current.setMonth(state.current.getMonth()-1);
+    render();
+    }
+
+    function nextMonth(){
+    state.current.setMonth(state.current.getMonth()+1);
+    render();
+    }
+    
+    function back(){
+    state.current.setTime(now);
+    render();
+    }
+    
+    //根據資料產生的畫面
+    
+    function render(){
+       let headY=document.querySelector("#year");
+       headY.textContent=state.current.getFullYear();
+       let headM=document.querySelector("#month");
+       headM.textContent=state.current.getMonth()+1+" 月";
+    
+       let list=document.querySelector("#list"); 
+       list.innerHTML="";//先清空畫面
+
+      //  now = new Date.getTime();
+    
+       let firstDate=new Date(state.current.getFullYear(),state.current.getMonth(),1);
+       //設定一個變數儲存當下時間的年份/月份,並設定是第一天,這個第一天是為了下面迴圈的條件式用的
+    
+       let date=new Date(firstDate.getFullYear(),firstDate.getMonth(),1);
+      //這個同等上面的第一天是拿來跑值用的
+    
+  
+    
+       //畫出上個月的後幾天 
+       date.setDate(date.getDate()-date.getDay());
+       //要先往前推到星期日,然後慢慢加到這個月
+       //用今天的日期(getDate)往前推,星期幾就往前推幾天(getDay)
+      
+    
+       while(date<firstDate){
+           //條件為如果date比這個月第一天的日期更前面:JS的時間可以直接用><比較,小的為比較前面的日期
+        renderDate(date,list);
+        date.setDate(date.getDate()+1);
+       //推算的方法就同下面畫一整個月的一樣,只是條件式不同
+    }
+       
+       //畫出一個月
+       while(date.getMonth()===state.current.getMonth()){
+    
+        //畫出一天的格子
+        renderDate(date,list);
+        //日期+1
+        date.setDate(date.getDate()+1);
+       }
+
+      //畫出下個月的前幾天
+      while(date.getDay()>0){  //也可以是!=不等於0
+           //條件為如果今天的日期比星期天前面(不是星期天)的話就往前加
+        renderDate(date,list);
+        date.setDate(date.getDate()+1);
+       //推算的方法就同畫一整個月的一樣,只是條件式不同
+    }
+      }  
+    
+      function renderDate(date,list){
+    let cell=document.createElement("div");
+    cell.className="date"+(date.getMonth( )===state.current.getMonth( )?" ":" fadeout");
+    cell.className += (nowm === date.getMonth() && nowd === date.getDate()) ? " today":"";
+    // cell.className += ((nowm===state.current.getMonth()) && (nowd===state.current.getDate())?" today":"");
+    // cell.className += (date.getMonth()==="6" && date.getDate()==="1") ?" hoday":""; 
+    //?"":""  為if..else-->if前面的條件成立,則執行第一個"",若否,則執行第二個""。
+    cell.textContent=date.getDate();
+    // list.appendChild(cell);
+  //  console.log(state.current.getMonth()+"/"+state.current.getDate());
+  //  console.log(date.getMonth()+1, date.getDate());
+    
+    
+    //把cell的內容放入list中
+   
+
+    var holiday2020=[
+      {date:"0802",event:"CF"},
+      {date:"0813", event:"10"},
+      {date:"0817",event:"CF"},
+      {date:"0823",event:"CF"}, 
+      {date:"0824",event:"10"},  
+    	{date:'0123',event:'春節'},
+			{date:'0111',event:'投票日'},
+      {date:'0101',event:'元旦'},
+			{date:'0124',event:'除夕'},
+			{date:'0125',event:'初一'},
+			{date:'0126',event:'初二'},
+			{date:'0127',event:'初三'},
+			{date:'0128',event:'初四'},
+			{date:'0129',event:'初五'},
+			{date:'0208',event:'元宵節'},
+			{date:'0214',event:'情人節'},
+			{date:'0228',event:'和平紀念日'},
+			{date:'0404',event:'兒童節'},
+			{date:'0405',event:'清明節'},
+			{date:'0501',event:'勞動節'},
+			{date:'0510',event:'母親節'},
+			{date:'0625',event:'端午節'},
+			{date:'0626',event:'彈性放假'},
+			{date:'0808',event:'父親節'},
+			{date:'0825',event:'七夕'},
+			{date:'0902',event:'中元節'},
+			{date:'0928',event:'教師節'},
+			{date:'1001',event:'中秋節'},
+			{date:'1002',event:'彈性放假'},
+			{date:'1010',event:'國慶日'},
+			{date:'1031',event:'萬聖節'},
+			{date:'1221',event:'冬至'},
+			{date:'1225',event:'聖誕節'},
+		
+    
+    ]
+    // console.log(holiday2020.length);
+
+    var fourDate="";
+
+    if(date.getMonth()+1 < 10){
+					if(date.getDate() < 10){
+            fourDate= '0' + (date.getMonth()+1) + '0' + date.getDate();
+					}else{
+						fourDate= '0' + (date.getMonth()+1)+ date.getDate();
+					}
+				}else{
+					if(date.getDate() < 10){
+						fourDate= (date.getMonth()+1) + '0' + date.getDate();
+					}else{
+						fourDate= (date.getMonth()+1) +  date.getDate();
+					}
+				}
+
+        if(date.getFullYear() == 2020){
+					for(let i=0;i<holiday2020.length;i++){
+						if(fourDate == holiday2020[i].date && holiday2020[i].event=="CF"){
+							cell.innerHTML += "<br/>" + '<span class="fa fa-child"></span>';
+							
+						}
+            if(fourDate == holiday2020[i].date && holiday2020[i].event=="10"){
+							cell.innerHTML += "<br/>" + '<span class="fa fa-hand-peace-o"></span>';
+							
+						}
+            if(fourDate == holiday2020[i].date && holiday2020[i].event != 'CF' && holiday2020[i].event != '10'){
+							cell.innerHTML += "<br/>" + "<a class='holiday'>" + holiday2020[i].event + "</a>";
+              
+
+							
+						}
+            
+
+					}
+				}
+
+       list.appendChild(cell);
+
+    
+    
+      }  
+     
+    
+  
+    
+    
+    
+    
+  // let exh=document.createElement("div");
+  // let textnode=document.createTextNode("CF");
+  // exh.appendChild(textnode);
+  // document.getElementsByClassName("date[7]").appendChild(exh);
+  
+
+
+
+    
+   
+
+    init();
+    </script>    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
+<script src="bs441/js/bootstrap.js"></script>
+<script src="bs441/instagram-feed-hashtag-story/instagram-feed-hashtag-story/instastory.js"></script>
+<script async src="//www.instagram.com/embed.js"></script>
+</body>
+</html>

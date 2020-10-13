@@ -1,0 +1,909 @@
+
+body{
+    font-family:Microsoft JhengHei;
+    font-size: 16px;
+    background-color: rgb(255, 246, 236);
+    
+
+}
+a{
+    color: rgb(27, 17, 17); 
+    
+}
+
+a:hover{
+    text-decoration: none;
+    color:  rgb(27, 17, 17); 
+    font-weight: bold;
+    
+}
+
+.blank{
+    height: 100px;
+}
+
+
+
+
+.wrapper{
+    padding: 0 80px;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 992px){
+    .wrapper{
+        padding: 0;
+    }
+}
+
+/* @media (max-width: 992px){
+    .wrapper-top{
+        margin-top: 80px;
+    }
+} */
+
+.client-navbar{
+    background-color: rgb(255, 246, 236); 
+}
+
+@media (max-width: 992px){
+    .client-navbar{
+    padding: 0px 20px;
+       
+        
+    }}
+
+.client-navbar.client-navbar-fixed-top {   
+    margin-bottom: 40px;
+}
+
+@media (max-width: 992px){
+    .client-navbar.client-navbar-fixed-top {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+        padding-bottom: 0;
+        margin-bottom: 0;
+
+     }}    
+     @media (max-width: 992px){
+         .news-topimage{
+             padding-top: 30px;
+         }
+     }        
+   
+
+
+@media (max-width: 992px){
+.client-navbar.show {
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1030;
+    max-height: 100%;
+  
+    background-color: rgb(253, 252, 252,0.9);
+    
+}}
+
+.list>.hoday{
+    background-color: #252524;
+}
+
+
+
+/* navbar分成上下兩大區塊 */
+.client-navbar .navbar-header, .client-navbar .navbar-footer {
+    display: flex;
+    align-items: center;
+}
+
+/* 上三下三共六區,將區塊均分,並設為flex以移動內容 */
+.navbar-logo , .shop-car ,.media ,.navbar-search ,.client-navbar-nav ,.social-links{
+    flex: 1; 
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+    display: flex;
+}
+
+
+    
+
+
+/* 漢堡按鈕區,在992px以下才會出現 */
+.navbar-mobil-btn{
+    display: none;
+}
+@media (max-width: 992px){
+.navbar-mobile-btn {
+
+    flex: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+    justify-content: flex-start;
+    display: block;
+
+}}
+
+/* 漢堡按鈕的三條線 */
+@media (max-width: 992px){
+    .navbar-mobile-btn span {
+    display: block;
+    height: 2px;
+    width: 30px;
+    background-color: #212529;
+    margin-top: 6px;
+    margin-bottom: 6bx;
+
+    /* 在點擊觸發.open後會經過此transition過程變形成下面的形狀 */
+    transition: all .3s ease-in-out;
+
+}}
+
+/* 第一條線,點擊後旋轉45度. */
+@media (max-width: 992px){
+.navbar-mobile-btn.open span:first-child {
+    transform: rotate(45deg);
+    transform-origin: 13%;
+    
+}}
+/* 第二條線,點擊後消失 */
+@media (max-width: 992px){
+    .navbar-mobile-btn.open span:nth-child(2) {
+        opacity: 0;
+        
+    }}
+/* 第三條線,點擊後反方向轉45度 */
+@media (max-width: 992px){
+        .navbar-mobile-btn.open span:nth-child(3) {
+            transform: rotate(-45deg);
+            transform-origin: 13%;
+            
+        }}    
+
+/* 在漢飽按鈕出現之後要收進去的選項:左上(空)/搜尋列/選單/社群媒體         */
+@media (max-width: 992px){
+    .client-navbar .media,.client-navbar .navbar-search,.client-navbar .client-navbar-nav,.client-navbar .social-links{
+        display: none;
+    }
+}
+
+/* 設定footer區塊跟選項的navbarnav區塊在.show出現的狀況下(也就是漢堡按鈕被打開的時候)垂直顯示 */
+
+@media (max-width: 992px){
+.client-navbar.show .navbar-footer,.client-navbar.show .navbar-footer .client-navbar-nav{
+            display: flex;
+            flex-direction: column;
+    }
+}
+
+/* 在漢堡按鈕打開的狀態下(.show),navbar-nav/search跟social-links三個部份的順序要用order重新排列 */
+
+@media (max-width: 992px){
+.client-navbar.show>.navbar-footer>.client-navbar-nav{
+    order: 1;
+    }}
+
+    @media (max-width: 992px){
+        .client-navbar.show>.navbar-footer>.client-navbar-nav>.navbar-link{
+           padding: 15px;
+            }}    
+
+@media (max-width: 992px){
+    .client-navbar.show>.navbar-footer>.navbar-search{
+        display: block;
+        width: 100%;
+        order: 3;
+        margin-left: 30%;
+      
+     }}
+   
+
+@media (max-width: 992px){
+        .client-navbar.show>.navbar-footer>.navbar-search::before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 70%;
+        height: 1.5px;
+        background-color: #212529;
+    }}
+
+
+@media (max-width: 992px){
+    .client-navbar.show>.navbar-footer>.social-links{
+        display: block;
+        order: 2;
+            
+    }}
+
+    @media (max-width: 992px){
+        .client-navbar.show>.navbar-footer>.social-links>.fa{
+           
+               padding: 20px; 
+        }}
+
+
+
+
+
+
+
+
+
+
+/* RWD切換兩個LOGO */
+.navbar-logo img{
+    display: none;
+    width: 200px;
+
+}
+.navbar-logo img:nth-child(1){
+    display: block;
+}
+
+@media (max-width:992px){
+    .navbar-logo img:nth-child(1){display: none;}
+    .navbar-logo img:nth-child(2){
+        display: block;
+        width: 200px;
+    }
+}
+@media (max-width:360px){
+    .navbar-logo img:nth-child(1){display: none;}
+    .navbar-logo img:nth-child(2){
+        display: block;
+        width: 150px;
+    }
+}
+
+
+
+
+
+
+/* 上下兩區塊的中間內容物置中 */
+.navbar-logo, .client-navbar-nav {
+    justify-content: center;
+}
+/* 上下兩區塊的右邊區塊內容物靠右 */
+.shop-car, .social-links {
+    justify-content: flex-end;
+}
+
+/* 若無設定左邊區塊的內容物自然靠左 */
+
+/* 為了設定放下鏡下面線條的相對位置 */
+.navbar-search{
+position: relative;
+}
+
+.navbar-search img{
+    margin-bottom: .5rem;
+}
+
+/* 設定偽類加進線條,並把位置設定在底部 */
+.navbar-search::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    height: 1.5px;
+    background-color: #212529;
+}
+
+
+
+/* .client-navbar-nav{
+    display: flex;
+    transition:all 0.2s ease-in-out;
+    
+} */
+
+
+.navbar-link{
+    color: #212529;
+    
+}
+ 
+/* .prod-slide{
+    font-family:Microsoft JhengHei; 
+
+} */
+
+.container-fluied{
+    background-color: rgb(255, 246, 236);
+}
+.top-bar{
+    background-color: rgb(226, 198, 166);
+    height: 20px;
+}
+
+
+
+
+.nav-link{
+    padding: 0;
+}
+
+.carousel,.newimg,.calendar {
+    max-width: 1200px;
+}
+
+
+@media (max-width:768px){
+    .calendar>.col-lg-8 {
+    
+    display: none;
+
+}}
+.fa-child{
+    color: #58ca95;
+}
+.fa-hand-peace-o{
+    color: #be12b0;
+
+}
+.holiday{
+    font-size: 18px;
+    position: relative;
+    bottom: -20px;
+}
+
+
+
+
+.navbar-brand{
+    
+    font-size: 1.5em;  
+    margin: 0 0 0 0; 
+    padding: 0 0 0 0;
+}
+
+
+    
+
+/* 
+.carousel-item{
+    width: 100%;
+  } */
+
+  @media only screen and (min-width:480px) { .carousel-item{ height: 500px; } }
+
+.carousel-indicators>li{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.border-top {
+    border-top: 0.5px solid #dee2e6 !important;
+  }
+  .border-bottom {
+    border-bottom: 0.5px solid #dee2e6 !important;
+  }
+
+
+
+
+hr{
+    max-width: 1200px;
+}
+
+.img-box{
+    display: block;
+    max-width: 470px;
+    max-height:450px;  
+    overflow: hidden;
+}
+.prod-slide{
+  
+   width: 100%;
+   transition: all .5s;
+  
+
+}
+.prod-slide:hover{
+    
+    width: 104%;
+ 
+ }
+
+
+.news{
+    width:200px;
+
+}
+.social-links>a{
+   
+    padding: 8px;
+    
+}
+
+p{
+    margin: 0;
+}
+
+.top-bar {
+    background-color: rgb(252, 235, 215);
+}
+
+
+.jumbotron{
+    background-image: url("image/LVMH.jpg")
+}
+
+
+.event{
+    max-width: 1140px;
+}
+
+
+.event>div>a{
+   
+    text-decoration: none;
+}
+
+/* .event{
+   background-color: #e6cbb8;
+   height: 300px;
+   margin-top: 30px;
+} */
+/* .more{
+    margin: 10px 0;
+} */
+
+
+.footer{
+    background-color: rgb(255, 246, 236);
+    max-width: 1140px;
+ 
+}
+/* LOCATION頁面 */
+.card{
+    max-width: 1140px;
+}
+.card-img-top{
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+}
+.card-img-top>img{
+    position: absolute;
+    top: -100px;
+    width: 100%;
+
+}
+
+
+/* shop頁面 */
+.filter-catagories{
+    list-style: none;
+    padding: 0;
+   
+    
+    }
+.filter-catagories>li>a{
+    text-decoration: none;
+    
+    
+}
+.page-link{
+    color: rgb(27, 17, 17); 
+    background-color:transparent ;
+}
+
+.pi-pic>a>img{
+    width: 100%;
+    box-shadow:inset 0 0 0 1px  rgba(0,0,0,1);
+
+}
+.product-shop{
+    max-width: 1140px;
+}
+
+
+
+
+.product>img{
+    width: 100%;
+}
+
+.catagory-name {
+    margin-bottom: 10px;
+}
+.catagory-name .catagory-name>p{
+    font-size: 10px;
+
+}
+
+
+.site-section{
+    background-color: rgb(255, 246, 236);
+    padding: 50px 0;
+ }
+ .pagination {
+    /* margin-right: -6px;
+    margin-left: -6px; */
+    padding-top: 30px;
+}
+.active-pagination {
+    background-color: #222222;
+    color: white;
+}
+
+.item-pagination {
+    font-family: Montserrat-Regular;
+    font-size: 13px;
+    color: #808080;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid #eeeeee;
+    margin: 6px;}
+
+.flex-c-m {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}   
+.trans-0-4{
+
+    transition: all 0.4s;
+}
+
+/* About頁面 */
+
+.aboutimg {
+    width: 820px;
+}
+.story-2{
+    display: none;
+}
+
+@media (max-width:767px){
+    .story-1{display: none;}
+    .story-2{display: block;}
+}
+
+
+
+
+.m-text26 {
+        font-family: Montserrat-Regular;
+        font-size: 25px;
+        color: #333333;
+        line-height: 1.2;
+    }    
+
+/* fixtop之後的圖片下移     */
+@media (max-width:992px){
+    .slider,.news-topimage {
+        margin-top: 110px;
+     
+    }
+    .loc,.product-list,.aboutus.row {
+        margin-top: 140px;
+    }  
+}    
+
+.about-sec{
+    background-color: rgb(255, 246, 236);
+}
+.bo13 {
+    border-left: 3px solid #e6e6e6;
+} 
+
+
+
+
+
+
+
+.fa {
+    padding: 2px;
+    font-size: 20px!important;
+
+    text-align: center;
+    text-decoration: none;
+    margin: 1px 1px;
+  }
+
+.fa:hover{
+    text-decoration: none;
+}
+  
+.fa-instagram {
+    
+    color: #4e3a28;
+  }
+.fa-facebook {
+   
+    color: #4e3a28;
+
+  }
+.fa-twitter {
+    
+    color: #4e3a28;
+  }
+
+  .loc{
+    background-color: rgb(255, 246, 236);
+    
+  }
+
+  .map-container-7{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+    }
+.map-container-7>iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+    }
+
+.goal{
+    max-width: 800px;
+}
+
+/* .goal-block{
+    flex: 1; 
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+    display: flex;
+} */
+.goal>div>img{
+    width: 100px;
+    
+}
+.goal>div>p{
+    display: none;
+}
+@media only screen and (min-width:480px) { .goal>div>p { display: block; } }
+
+.goal-block{
+    width: 200px;
+}
+
+/* LOCATION */
+/* .section{width: 800px;} */
+/* 使用後會使rwd在縮小時失能 */
+
+/* calendar頁面 */
+.tag>img{
+    max-width: 1140px;
+}
+
+
+/* NEWs頁面 */
+.year-month{
+    
+    background-color: rgb(252, 235, 215);
+    width: 95%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+} 
+.headlist{
+    display: flex;
+    /* 讓直向的數字變橫向 */
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.headlist>.day{
+    width:13%;
+    height:30px ;
+   
+   
+    margin-right: 5px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding: 5px 10px;
+    border-radius:10% ;
+
+    
+   
+    
+}  
+
+.list{
+    display: flex;
+    /* 讓直向的數字變橫向 */
+    flex-wrap: wrap;
+    /* 橫向斷行 */
+    width: 95%;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    font-size: 16pt;
+    font-weight: bold;
+    margin-bottom: 80px;
+
+
+
+ }
+.list>.date{
+    width:13%;
+    height:18% ;
+    /* height:100px; */
+    background-color: antiquewhite;
+    margin-right: 5px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding: 5px 10px;
+    border-radius:10% ;
+}  
+
+
+@media only screen and (max-width: 1040px) and (min-width: 992px){
+    .list{
+        height: 350px;
+    }
+       
+
+}
+
+.list>.today{
+    background-color: rgb(255, 220, 175);
+}
+
+.list>.fadeout{
+    opacity: 0.5;
+    font-size: smaller;
+    
+}
+/* h3{
+    position: relative;
+    left: 20px;
+    top: 20px;
+    font-size: 50px;
+} */
+
+.fa-angle-left,.fa-angle-right{
+    color: #4e3a28;
+    background-color:  rgb(255, 220, 175);
+    width: 40px;
+    height: 40px;
+    font-weight: bold;
+    font-size: 30px!important;
+    border-radius: 50%;
+    box-shadow: 2px -2px #c49b78;
+    cursor: pointer;
+
+}
+.back{
+    background-color:  rgb(255, 220, 175);
+    border-radius: 50%;
+    box-shadow: 2px -2px #c49b78;
+    font-style: normal;
+    font-family:Microsoft JhengHei;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    font-weight: bold;
+    cursor: pointer;
+
+
+}
+.dots{
+    width: 5px;
+    border-radius: 50%;
+    background-color:  #c49b78;
+}
+
+
+
+
+/* footer*/
+.bottom-row{
+    background-color: rgb(250, 236, 220);
+}
+
+.bottom{
+    max-width: 1140px;
+}
+
+.bottom-list>li{
+   
+    list-style: none;
+}
+
+
+.bottom-list{
+  
+    display: none;
+}
+@media (min-width:768px) { .bottom-list{ display: block; } }
+
+.newsletter{
+    width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+    }
+@media (min-width:768px) { .newsletter{ margin-right:0 ; margin-left: 0; } }
+
+
+footer>li{
+    border-style: solid;
+  border-width: 2px;
+  border-color: rgb(39, 20, 12); 
+}
+
+.cd1{
+    position: relative;
+    margin-bottom: 30px;
+   
+}
+.cd1>.cd1-text{
+    background-color: rgba(252, 251, 249);
+    color:#212529;
+    position: absolute;
+    right: 10%;
+    left: 10%;
+    text-align: center;
+    bottom:10px;   
+    
+}
+
+.a-links{
+    max-width: 700px;
+}
+
+.a-links>a{
+    color: #dee2e6;
+    background-color: rgb(15, 1, 1);
+    display: inline-block;
+    padding: 5px 10px;
+    margin-bottom: 10px;   
+}
+
+.instapic{
+    max-width: 700px;
+    
+    
+}
+
+.instapic>a{
+    
+    flex: 1; 
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+    display: flex;
+    
+}
+
+.insta-pic{
+  width: 100%;
+ 
+  
+    
+
+
+
+}
+
+
